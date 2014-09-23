@@ -33,10 +33,22 @@ if(isset($_POST['send_contact_form']))
 				include_once($_SERVER['DOCUMENT_ROOT'].'/wp-includes/class-phpmailer.php' );
 
 				$mail = new PHPMailer();
+				
+				$mail->SMTPAuth = true;
+				
+				$mail->Host = "localhost";
+				
+				$mail->Username = "xxxxxxxxxxxxxxxxxxxxx";
+				
+				$mail->Password = "xxxxxxxxxxxxxxxxxxxxxx"; 
+
+				$mail->Port = 25;
+				
+				
 
 				$mail->IsSMTP();
 
-				$mail->IsHTML(true);				 // Set email format to HTML
+				$mail->IsHTML(true);
 
 				$mail->AddAddress("joezacek@gmail.com");
 
