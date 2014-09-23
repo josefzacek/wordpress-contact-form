@@ -36,7 +36,7 @@ if(isset($_POST['send_contact_form']))
 
 				$mail->IsSMTP();
 
-				$mail->IsHTML(true);
+				$mail->IsHTML(true);				 // Set email format to HTML
 
 				$mail->AddAddress("joezacek@gmail.com");
 
