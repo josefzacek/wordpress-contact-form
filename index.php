@@ -103,7 +103,7 @@ if(isset($_POST['contact-form-submit']))
 
 	<div style="text-align:center; margin: 50px 0;">
 		<a href="<?php echo home_url(); ?>">
-			<img src="<?php echo bloginfo('template_url')?>/images/thank-you.png" alt="Thank you" style="max-width: 197px;">
+			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/thank-you.png" alt="Thank you" style="max-width: 197px;">
 		</a>
 		<h1>Thank You <span id="thank-you-name"><?php echo $contact_name;?></span>,</h1>
 		<p>You will be shortly contacted by our staff with answers to your comment.</p>
