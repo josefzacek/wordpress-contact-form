@@ -51,6 +51,8 @@ if(isset($_POST['send_contact_form']))
 				$mail->IsHTML(true);
 
 				$mail->AddAddress("joezacek@gmail.com");
+				
+				$mail->AddCC("SOME EMAIL ADDRESS GOES HERE");
 
 				$mail->From = $_POST["email"];
 
