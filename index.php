@@ -147,6 +147,20 @@ if(isset($_POST['contact-form-submit']))
 						<label for="contact-form-phone">Phone: <sup>*</sup><span class="error"><?php echo $field;?></span></label><br>
 						<input type="text" name="contact-form-phone" id="contact-form-phone">
 					</p>
+					
+					<p>
+						<label for="seek-quotation-form-subject">Subject: <sup>*</sup><span class="error"><?php echo $field;?></span></label><br>
+						<select id="seek-quotation-form-subject" name="seek-quotation-form-subject">
+							<option>Income Tax</option>
+							<option>Corporation Tax</option>
+							<option>Capital Gains Tax</option>
+							<option>VAT</option>
+							<option>Stamp Duties</option>
+							<option>Capital Acquisitions Tax</option>
+							<option>Foreign Tax</option>
+							<option value="other">Other</option>
+						</select>
+					</p>
 
 					<p>
 						<label for="contact-form-message">Message <sup>*</sup><span class="error"><?php echo $field;?></span></label><br>
